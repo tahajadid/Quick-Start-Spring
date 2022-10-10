@@ -14,8 +14,8 @@ public class NewsController {
     @GetMapping(value = {"", "/"})
     public List<News> listOfNews() {
         return Arrays.asList(
-                new News(0,"es","fr","test","test no yamlk loin"),
-                new News(1,"en","fr","test","test no yamlk loin")
+                new News(0,"es","fr","test","test no yamlk loin","01-08-2022"),
+                new News(1,"en","fr","test","test no yamlk loin","01-08-2022")
         );
     }
 }

@@ -7,13 +7,16 @@ public class News {
     private String idLeague;
     private String title;
     private String description;
+    private String publishedDate;
 
-    public News(int idNews, String idCountry, String idLeague, String title, String description) {
+    public News(int idNews, String idCountry, String idLeague, String title, String description, String publishedDate) {
         this.idNews = idNews;
         this.idCountry = idCountry;
         this.idLeague = idLeague;
         this.title = title;
         this.description = description;
+        this.publishedDate = publishedDate;
+
     }
 
     public int getIdNews() {
@@ -34,6 +37,14 @@ public class News {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getPublishedDate() {
+        return publishedDate;
+    }
+
+    public void setPublishedDate(String publishedDate) {
+        this.publishedDate = publishedDate;
     }
 
     public void setIdNews(int idNews) {
