@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping(value = "/api/v1/news")
 public class NewsController {
 
-    @GetMapping(value = {"", "/"})
+    @GetMapping("/")
     public List<News> listOfNews() {
         return Arrays.asList(
                 new News(0,"es","fr","test","test no yamlk loin","01-08-2022"),
