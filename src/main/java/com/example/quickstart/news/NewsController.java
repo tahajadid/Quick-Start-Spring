@@ -12,10 +12,13 @@ import java.util.List;
 public class NewsController {
 
     @GetMapping("/")
-    public List<News> listOfNews() {
-        return Arrays.asList(
-                new News(0,"es","fr","test","test no yamlk loin","01-08-2022"),
-                new News(1,"en","fr","test","test no yamlk loin","01-08-2022")
+    public NewsResponse listOfNews() {
+        return new NewsResponse(
+                1,
+                Arrays.asList(
+                        new News(0,"es","fr","test","test no yamlk loin","01-08-2022"),
+                        new News(1,"en","fr","test","test no yamlk loin","01-08-2022")
+                )
         );
     }
 }
